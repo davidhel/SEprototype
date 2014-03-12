@@ -18,7 +18,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtWelcome"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="65dp"
+        android:layout_marginTop="30dp"
         android:ems="10"
         android:inputType="phone" >
     </EditText>
@@ -29,17 +29,33 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/editText1"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="39dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="textPassword" />
 
     <Button
         android:id="@+id/button1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/submit" />
+
+    <TextView
+        android:id="@+id/tvNewUser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="68dp"
-        android:layout_toRightOf="@+id/txtWelcome"
-        android:text="@string/submit" />
+        android:layout_below="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="84dp"
+        android:text="@string/newUser" />
+
+    <Button
+        android:id="@+id/btnNewUser"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvNewUser"
+        android:layout_marginTop="24dp"
+        android:text="@string/btnNewUser" />
 
 </RelativeLayout>
