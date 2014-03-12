@@ -1,5 +1,7 @@
 <resources>
 
     <string name="app_name">SEprototype</string>
+    <string name="welcome">Please log in</string>
+    <string name="submit">Submit</string>
 
 </resources>
