@@ -1,9 +1,11 @@
 <resources>
 
     <string name="app_name">SEprototype</string>
-    <string name="welcome">Please log in</string>
+    <string name="welcome">Existing user:</string>
     <string name="submit">Submit</string>
-    <string name="newUser">New user?</string>
+    <string name="newUser">New user:</string>
     <string name="btnNewUser">Register new user</string>
+    <string name="telephone">Telephone:</string>
+    <string name="password">Password:</string>
 
 </resources>
