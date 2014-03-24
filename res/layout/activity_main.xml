@@ -8,46 +8,62 @@
         android:id="@+id/txtWelcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="31dp"
+        android:textSize="18sp"
         android:text="@string/welcome" />
-
-    <EditText
-        android:id="@+id/editText1"
+    
+    <TextView 
+        android:id="@+id/txtPhone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:layout_below="@+id/txtWelcome"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:ems="10"
+        android:text="@string/telephone" />
+
+    <EditText
+        android:id="@+id/etPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPhone"
+        android:layout_marginTop="10dp"
         android:inputType="phone" >
     </EditText>
-
-    <EditText
-        android:id="@+id/editText2"
+    
+    <TextView 
+        android:id="@+id/tvPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText1"
-        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/etPhoneNumber"
+        android:text="@string/password"/>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvPassword"
         android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="textPassword" />
 
     <Button
-        android:id="@+id/button1"
-        android:layout_width="fill_parent"
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/etPassword"
+        android:layout_marginTop="20dp"
+        android:onClick="btnSubmit"
         android:text="@string/submit" />
 
     <TextView
         android:id="@+id/tvNewUser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="84dp"
+        android:layout_below="@+id/btnSubmit"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="50dp"
+        android:textSize="17sp"
         android:text="@string/newUser" />
 
     <Button
@@ -56,6 +72,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvNewUser"
         android:layout_marginTop="24dp"
+        android:onClick="btnRegister"
         android:text="@string/btnNewUser" />
 
 </RelativeLayout>
