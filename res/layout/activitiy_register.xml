@@ -13,63 +13,60 @@
         android:layout_marginTop="22dp"
         android:text="@string/reg_user"
         android:textSize="20sp" />
-    <ScrollView 
 
-    <TextView
-        android:id="@+id/txtRegPhone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/txtRegister"
-        android:layout_marginLeft="31dp"
-        android:layout_marginTop="53dp"
-        android:text="@string/telephone" />
+        <TextView
+            android:id="@+id/txtRegPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/txtRegister"
+            android:layout_marginLeft="31dp"
+            android:layout_marginTop="53dp"
+            android:text="@string/telephone" />
 
-    <TextView
-        android:id="@+id/txtRegPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/txtRegPhone"
-        android:layout_below="@+id/txtRegPhone"
-        android:layout_marginTop="41dp"
-        android:text="@string/password" />
+        <TextView
+            android:id="@+id/txtRegPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtRegPhone"
+            android:layout_below="@+id/txtRegPhone"
+            android:layout_marginTop="41dp"
+            android:text="@string/password" />
 
-    <TextView
-        android:id="@+id/txtRegMail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/txtRegPassword"
-        android:layout_below="@+id/txtRegPassword"
-        android:layout_marginTop="32dp"
-        android:text="@string/mail" />
+        <TextView
+            android:id="@+id/txtRegMail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtRegPassword"
+            android:layout_below="@+id/txtRegPassword"
+            android:layout_marginTop="32dp"
+            android:text="@string/mail" />
 
-    <TextView
-        android:id="@+id/txtRegFirstname"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/txtRegMail"
-        android:layout_below="@+id/txtRegMail"
-        android:layout_marginTop="40dp"
-        android:text="@string/first_name" />
+        <TextView
+            android:id="@+id/txtRegFirstname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtRegMail"
+            android:layout_below="@+id/txtRegMail"
+            android:layout_marginTop="40dp"
+            android:text="@string/first_name" />
 
-    <TextView
-        android:id="@+id/txtRegSureName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/txtRegFirstname"
-        android:layout_below="@+id/txtRegFirstname"
-        android:layout_marginTop="40dp"
-        android:text="@string/sure_name" />
+        <TextView
+            android:id="@+id/txtRegSureName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtRegFirstname"
+            android:layout_below="@+id/txtRegFirstname"
+            android:layout_marginTop="40dp"
+            android:text="@string/sure_name" />
 
-    <TextView
-        android:id="@+id/txtRegAddress"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/txtRegSureName"
-        android:layout_below="@+id/txtRegSureName"
-        android:layout_marginTop="40dp"
-        android:text="@string/Address" />
-    
-    ></ScrollView>
+        <TextView
+            android:id="@+id/txtRegAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtRegSureName"
+            android:layout_below="@+id/txtRegSureName"
+            android:layout_marginTop="40dp"
+            android:text="@string/address" />
 
 </RelativeLayout>
