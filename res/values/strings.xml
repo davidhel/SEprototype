@@ -19,4 +19,6 @@
     <string name="first_name">First name:</string>
     <string name="sure_name">Sure name:</string>
     <string name="address">Address:</string>
+    <string name="postal_address">Postal address:</string>
+    <string name="postal_number">Postal number:</string>
 </resources>
