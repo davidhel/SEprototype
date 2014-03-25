@@ -10,34 +10,58 @@ import android.widget.EditText;
 
 public class MainActivity extends Activity{
 	
-	private String username = null;
-	private String password = null;
-	EditText txtPhone = (EditText)findViewById(R.id.etPhoneNumber);
-	EditText txtPassword = (EditText)findViewById(R.id.etPassword);
+	private String username;
+	private String password;
+	EditText txtPhone;
+	EditText txtPassword;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		init();
 	}
 	
+	
+	private void init() {
+		username = null;
+		password = null;
+
+	}
+
+
 	public void btnSubmit(View view){
-		username = txtPhone.toString();
-		password = txtPassword.toString();
-		checkUsername(username);
-		checkPassword(password);
-		Intent intent = new Intent(this, OrderActivity.class);
-		startActivity(intent);
-	}
-	
-	private void checkUsername(String username) {
-		// TODO Auto-generated method stub
+		EditText txtPhone = (EditText)findViewById(R.id.etPhoneNumber);
+		EditText txtPassword = (EditText)findViewById(R.id.etPassword);
+		username = txtPhone.getText().toString();
+		password = txtPassword.getText().toString();
 		
+    	if(checkUsername(username)){
+			if(checkPassword(password)){
+				Intent intent = new Intent(this, OrderActivity.class);
+				startActivity(intent);
+			}
+		}
+
 	}
 	
-	private void checkPassword(String password) {
-		// TODO Auto-generated method stub
+public  boolean checkUsername(String username) {
+		if(username.equals("1")){
+			return true;
+		}
+		else{
+			return false;
+		}
+	}
+	
+	private boolean checkPassword(String password) {
+		if(password.equals("1")){
+			return true;
+		}
+		else{
+			return false;
+		}
 		
 	}
 	
