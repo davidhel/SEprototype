@@ -1,10 +1,11 @@
 <resources>
 
     <string name="app_name">SEprototype</string>
-    <string name="welcome">Please log in</string>
+    <string name="welcome">Existing user:</string>
     <string name="submit">Submit</string>
-    <string name="newUser">New user?</string>
+    <string name="newUser">New user:</string>
     <string name="btnNewUser">Register new user</string>
+<<<<<<< HEAD
     <string name="car_text">Car</string>
     <string name="zone_text">Zone</string>
     <string name="city_text">City</string>
@@ -12,5 +13,9 @@
     <string name="start_parking_string">Start Parking</string>
     <string name="stop_parking_string">Stop Parking</string>
     <string name="zone_price_per_hour_string">Price per Hour</string>
+=======
+    <string name="telephone">Telephone:</string>
+    <string name="password">Password:</string>
+>>>>>>> cb2346f428a71412c233008f43473d47f12da145
 
 </resources>

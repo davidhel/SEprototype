@@ -11,6 +11,7 @@ public final class R {
     public static final class attr {
     }
     public static final class drawable {
+<<<<<<< HEAD
         public static final int ic_launcher=0x7f020000;
         public static final int start_parking_selector=0x7f020001;
     }
@@ -30,6 +31,22 @@ public final class R {
         public static final int tvZone=0x7f06000d;
         public static final int tvZoneInfoTitle=0x7f06000f;
         public static final int tvZoneInformation=0x7f060010;
+=======
+        public static final int green_start_parking_button_clicked=0x7f020000;
+        public static final int green_start_parking_button_normal=0x7f020001;
+        public static final int ic_launcher=0x7f020002;
+        public static final int red_stop_parking_button_clicked=0x7f020003;
+        public static final int red_stop_parking_button_normal=0x7f020004;
+    }
+    public static final class id {
+        public static final int btnNewUser=0x7f060007;
+        public static final int btnSubmit=0x7f060005;
+        public static final int etPassword=0x7f060004;
+        public static final int etPhoneNumber=0x7f060002;
+        public static final int tvNewUser=0x7f060006;
+        public static final int tvPassword=0x7f060003;
+        public static final int txtPhone=0x7f060001;
+>>>>>>> cb2346f428a71412c233008f43473d47f12da145
         public static final int txtWelcome=0x7f060000;
         public static final int zone_infor_fragment=0x7f06000a;
     }
@@ -45,10 +62,16 @@ public final class R {
         public static final int car_text=0x7f040005;
         public static final int city_text=0x7f040007;
         public static final int newUser=0x7f040003;
+<<<<<<< HEAD
         public static final int start_parking_string=0x7f040009;
         public static final int stop_parking_string=0x7f04000a;
         public static final int submit=0x7f040002;
         public static final int text_city_hint=0x7f040008;
+=======
+        public static final int password=0x7f040006;
+        public static final int submit=0x7f040002;
+        public static final int telephone=0x7f040005;
+>>>>>>> cb2346f428a71412c233008f43473d47f12da145
         public static final int welcome=0x7f040001;
         public static final int zone_price_per_hour_string=0x7f04000b;
         public static final int zone_text=0x7f040006;
