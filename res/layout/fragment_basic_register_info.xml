@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:orientation="horizontal"
+    android:baselineAligned="false"
+    android:weightSum="2">
+	<LinearLayout
+	    android:layout_width="0dp"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1"
+	    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tvCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/car_text"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Spinner
+        android:id="@+id/sCarSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+	
+	<TextView
+        android:id="@+id/tvCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/city_text"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Spinner
+        android:id="@+id/etCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+	</LinearLayout>
+	<RelativeLayout 
+	    android:layout_weight="1"
+	    android:layout_width="0dp"
+	    android:layout_height="wrap_content">
+	   
+	    <fragment
+	        android:id="@+id/zone_infor_fragment"
+	        android:name="no.gruppe3.seprototype.InfoFromZoneFragment"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        />
+    </RelativeLayout>
+
+   
+
+</LinearLayout>
