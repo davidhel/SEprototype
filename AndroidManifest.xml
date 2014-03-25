@@ -3,8 +3,13 @@
     android:versionCode="1"
     android:versionName="1.0" >
 
+<<<<<<< HEAD
+    <uses-sdk 
+        android:minSdkVersion="11"
+=======
     <uses-sdk
         android:minSdkVersion="10"
+>>>>>>> cb2346f428a71412c233008f43473d47f12da145
         android:targetSdkVersion="19" />
 
     <application
@@ -21,14 +26,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
+        <activity android:name="no.gruppe3.seprototype.ParkingRegisterActivity" />
+=======
         <activity
             android:name=".OrderActivity"
             android:label="@string/app_name" >
         </activity>
+<<<<<<< HEAD
                 <activity
             android:name=".RegisterUserActivity"
             android:label="@string/app_name" >
         </activity>
+=======
+>>>>>>> cb2346f428a71412c233008f43473d47f12da145
+>>>>>>> 466423fe548ddd2a1a610c5b347d19f49dcd4617
     </application>
 
 </manifest>
