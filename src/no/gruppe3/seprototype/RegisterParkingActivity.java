@@ -3,7 +3,7 @@ package no.gruppe3.seprototype;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 
-public class ParkingRegisterActivity extends FragmentActivity{
+public class RegisterParkingActivity extends FragmentActivity{
 
 	
 	@Override

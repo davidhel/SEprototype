@@ -65,12 +65,10 @@ public class MainActivity extends Activity {
 		Intent intent = new Intent(this, RegisterUserActivity.class);
 		startActivity(intent);
 	}
-
-	@Override
-	protected void onResume() {
-		// TODO Auto-generated method stub
-		super.onResume();
-		Intent intent = new Intent(this, ParkingRegisterActivity.class);
+	//TESTING PURPOSES ONLY
+	public void btnParking(View view){
+		Intent intent = new Intent(this, RegisterParkingActivity.class);
 		startActivity(intent);
 	}
+
 }
