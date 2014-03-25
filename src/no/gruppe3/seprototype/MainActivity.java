@@ -64,5 +64,9 @@ public  boolean checkUsername(String username) {
 		}
 		
 	}
+	public void btnRegister(View view){
+		Intent intent = new Intent(this, RegisterUserActivity.class);
+		startActivity(intent);
+	}
 	
 }
