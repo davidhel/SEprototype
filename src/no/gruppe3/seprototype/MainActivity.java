@@ -58,7 +58,6 @@ public class MainActivity extends Activity {
 		} else {
 			return false;
 		}
-
 	}
 
 	public void btnRegister(View view) {
