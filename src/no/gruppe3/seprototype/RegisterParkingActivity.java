@@ -1,10 +1,14 @@
 package no.gruppe3.seprototype;
 
+import android.app.DialogFragment;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.view.View;
+import android.widget.Button;
 
 public class RegisterParkingActivity extends FragmentActivity{
-
+	
+	Button btnPickFromDate;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceBundle) {
@@ -43,8 +47,13 @@ public class RegisterParkingActivity extends FragmentActivity{
 		}
 		
 	}
+	public void btnPickFromDate(View view){
+		DialogFragment newFragment = new DatePickerFragment();
+		newFragment.show(getFragmentManager(), "datePicker");
+	}
 	
-	
-	
-
+	public void setDate(int year, int month, int day){
+		btnPickFromDate = (Button)findViewById(R.id.btnPickFromDate);
+		btnPickFromDate.setText(year + "/" + month + "/" + day);
+	}
 }
