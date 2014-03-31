@@ -87,6 +87,16 @@
             android:layout_alignParentTop="true"
             android:onClick="btnParking"
             android:text="TESTParking" />
+
+        <Button
+            android:id="@+id/btnDatabaseTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txtPhone"
+            android:layout_centerHorizontal="true"
+            android:onClick="btnDatabase"
+            android:text="Button" />
+
     </RelativeLayout>
 
 </ScrollView>

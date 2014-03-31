@@ -30,6 +30,10 @@
                 android:name=".RegisterUserActivity"
                 android:label="@string/app_name">
             </activity>
+            <activity
+                android:name=".TestDatabaseActivity"
+                android:label="@string/app_name">
+            </activity>
         </application>
 
 </manifest>

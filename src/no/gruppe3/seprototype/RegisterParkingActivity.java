@@ -57,8 +57,8 @@ public class RegisterParkingActivity extends FragmentActivity {
 
 	protected void setGUI() {
 
-		initBasicFragment();
-		initDynamicFragment();
+		//initBasicFragment();
+		//initDynamicFragment();
 
 	}
 
