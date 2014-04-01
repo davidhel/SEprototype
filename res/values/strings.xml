@@ -21,4 +21,20 @@
     <string name="address">Address:</string>
     <string name="postal_address">Postal address:</string>
     <string name="postal_number">Postal number:</string>
+    
+    <string-array name="spinner_car">
+        <item>AA76324</item>
+        <item>AB25947</item>
+    </string-array>
+    <string-array name="spinner_city">
+        <item>Halden</item>
+        <item>Sarpsborg</item>
+        <item>Fredrikstad</item>
+    </string-array>
+    <string-array name="spinner_zone">
+        <item>001</item>
+        <item>002</item>
+        <item>003</item>
+    </string-array>
+    <string name="pick_date">Pick date</string>
 </resources>

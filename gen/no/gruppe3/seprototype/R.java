@@ -8,6 +8,11 @@
 package no.gruppe3.seprototype;
 
 public final class R {
+    public static final class array {
+        public static final int spinner_car=0x7f050000;
+        public static final int spinner_city=0x7f050001;
+        public static final int spinner_zone=0x7f050002;
+    }
     public static final class attr {
     }
     public static final class drawable {
@@ -19,49 +24,49 @@ public final class R {
         public static final int start_parking_selector=0x7f020005;
     }
     public static final class id {
-        public static final int add=0x7f06001a;
-        public static final int basic_register_fragment=0x7f060022;
-        public static final int btnDatabaseTest=0x7f060018;
-        public static final int btnNewUser=0x7f060017;
-        public static final int btnPickFromDate=0x7f060025;
-        public static final int btnSubmit=0x7f060015;
-        public static final int btnSubmitUser=0x7f06000f;
-        public static final int cbToggleTimeSettings=0x7f060023;
-        public static final int delete=0x7f06001b;
-        public static final int dynamic_register_fragment=0x7f060026;
-        public static final int etNavn=0x7f06001c;
-        public static final int etPassword=0x7f060014;
-        public static final int etPhoneNumber=0x7f060012;
-        public static final int etRegAddress=0x7f06000c;
-        public static final int etRegMail=0x7f06000a;
-        public static final int etRegName=0x7f06000b;
-        public static final int etRegPassword=0x7f060009;
-        public static final int etRegPhone=0x7f060008;
-        public static final int etRegPostalAddress=0x7f06000d;
-        public static final int etRegPostalNumber=0x7f06000e;
-        public static final int flContainer=0x7f060024;
-        public static final int group=0x7f060019;
-        public static final int sCarSpinner=0x7f06001e;
-        public static final int sCity=0x7f060020;
-        public static final int sZoneSpinner=0x7f060028;
-        public static final int tvCar=0x7f06001d;
-        public static final int tvCity=0x7f06001f;
-        public static final int tvNewUser=0x7f060016;
-        public static final int tvPassword=0x7f060013;
-        public static final int tvZone=0x7f060027;
-        public static final int tvZoneInfoTitle=0x7f060029;
-        public static final int tvZoneInformation=0x7f06002a;
-        public static final int txtPhone=0x7f060011;
-        public static final int txtRegAddress=0x7f060005;
-        public static final int txtRegFirstname=0x7f060004;
-        public static final int txtRegMail=0x7f060003;
-        public static final int txtRegPassword=0x7f060002;
-        public static final int txtRegPhone=0x7f060001;
-        public static final int txtRegPostalAddress=0x7f060006;
-        public static final int txtRegPostalNumber=0x7f060007;
-        public static final int txtRegister=0x7f060000;
-        public static final int txtWelcome=0x7f060010;
-        public static final int zone_infor_fragment=0x7f060021;
+        public static final int add=0x7f07001a;
+        public static final int basic_register_fragment=0x7f070022;
+        public static final int btnDatabaseTest=0x7f070018;
+        public static final int btnNewUser=0x7f070017;
+        public static final int btnPickFromDate=0x7f070025;
+        public static final int btnSubmit=0x7f070015;
+        public static final int btnSubmitUser=0x7f07000f;
+        public static final int cbToggleTimeSettings=0x7f070023;
+        public static final int delete=0x7f07001b;
+        public static final int dynamic_register_fragment=0x7f070026;
+        public static final int etNavn=0x7f07001c;
+        public static final int etPassword=0x7f070014;
+        public static final int etPhoneNumber=0x7f070012;
+        public static final int etRegAddress=0x7f07000c;
+        public static final int etRegMail=0x7f07000a;
+        public static final int etRegName=0x7f07000b;
+        public static final int etRegPassword=0x7f070009;
+        public static final int etRegPhone=0x7f070008;
+        public static final int etRegPostalAddress=0x7f07000d;
+        public static final int etRegPostalNumber=0x7f07000e;
+        public static final int flContainer=0x7f070024;
+        public static final int group=0x7f070019;
+        public static final int sCarSpinner=0x7f07001e;
+        public static final int sCity=0x7f070020;
+        public static final int sZoneSpinner=0x7f070028;
+        public static final int tvCar=0x7f07001d;
+        public static final int tvCity=0x7f07001f;
+        public static final int tvNewUser=0x7f070016;
+        public static final int tvPassword=0x7f070013;
+        public static final int tvZone=0x7f070027;
+        public static final int tvZoneInfoTitle=0x7f070029;
+        public static final int tvZoneInformation=0x7f07002a;
+        public static final int txtPhone=0x7f070011;
+        public static final int txtRegAddress=0x7f070005;
+        public static final int txtRegFirstname=0x7f070004;
+        public static final int txtRegMail=0x7f070003;
+        public static final int txtRegPassword=0x7f070002;
+        public static final int txtRegPhone=0x7f070001;
+        public static final int txtRegPostalAddress=0x7f070006;
+        public static final int txtRegPostalNumber=0x7f070007;
+        public static final int txtRegister=0x7f070000;
+        public static final int txtWelcome=0x7f070010;
+        public static final int zone_infor_fragment=0x7f070021;
     }
     public static final class layout {
         public static final int activitiy_register_user=0x7f030000;
@@ -81,6 +86,7 @@ public final class R {
         public static final int mail=0x7f04000f;
         public static final int newUser=0x7f040003;
         public static final int password=0x7f04000d;
+        public static final int pick_date=0x7f040015;
         public static final int postal_address=0x7f040013;
         public static final int postal_number=0x7f040014;
         public static final int reg_user=0x7f04000e;
@@ -116,10 +122,10 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f050000;
+        public static final int AppBaseTheme=0x7f060000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f050001;
+        public static final int AppTheme=0x7f060001;
     }
 }

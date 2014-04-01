@@ -47,7 +47,7 @@
 	        android:layout_alignParentLeft="true"
 	        android:layout_alignParentTop="true"
 	        android:onClick="btnPickFromDate"
-	        android:text="Button" />
+	        android:text="@string/pick_date" />
 
 	 
 

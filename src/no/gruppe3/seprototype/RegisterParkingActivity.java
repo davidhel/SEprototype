@@ -1,9 +1,14 @@
 package no.gruppe3.seprototype;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import android.app.DialogFragment;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.text.format.Time;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
@@ -16,9 +21,7 @@ public class RegisterParkingActivity extends FragmentActivity {
 	Button btnPickFromDate;
 	boolean isTimeManuallySet = false;
 	DynamicRegisterFragment dynamicFragment;
-	Spinner car;
-	Spinner city;
-	Spinner zone;
+	Spinner car,city,zone;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceBundle) {
@@ -91,10 +94,40 @@ public class RegisterParkingActivity extends FragmentActivity {
 					R.id.basic_register_fragment, basicFragment);
 			
 			
-			car = (Spinner)findViewById(R.id.sCarSpinner);
-			zone = (Spinner)findViewById(R.id.sZoneSpinner);
-			city = (Spinner)findViewById(R.id.sCity);
+			
+			
+			
+			//Fyller dropdown listene
+			addItemsCarSpinner();
+			addItemsZoneSpinner();
+			addItemsCitySpinner();
+			//addListenerOnItemSelection();
+			
 		}
+	}
+
+	private void addItemsCitySpinner() {
+		city = (Spinner)findViewById(R.id.sCity);
+		ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+				R.array.spinner_city, android.R.layout.simple_spinner_dropdown_item);
+		adapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
+		city.setAdapter(adapter);
+	}
+
+	private void addItemsZoneSpinner() {
+		zone = (Spinner)findViewById(R.id.sZoneSpinner);
+		ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+				R.array.spinner_zone, android.R.layout.simple_spinner_dropdown_item);
+		adapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
+		zone.setAdapter(adapter);
+	}
+
+	private void addItemsCarSpinner() {
+		car = (Spinner)findViewById(R.id.sCarSpinner);
+		ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+				R.array.spinner_car, android.R.layout.simple_spinner_dropdown_item);
+		adapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
+		car.setAdapter(adapter);
 	}
 
 	public void btnPickFromDate(View view) {
