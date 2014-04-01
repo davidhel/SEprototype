@@ -7,13 +7,18 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
+import android.widget.Spinner;
+import android.widget.Toast;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 
 public class RegisterParkingActivity extends FragmentActivity {
 
 	Button btnPickFromDate;
 	boolean isTimeManuallySet = false;
-
+	DynamicRegisterFragment dynamicFragment;
+	Spinner car;
+	Spinner city;
+	Spinner zone;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceBundle) {
@@ -28,13 +33,9 @@ public class RegisterParkingActivity extends FragmentActivity {
 	}
 
 	private void initDynamicFragment() {
-		if (findViewById(R.id.dynamic_register_fragment) != null) {
-			final DynamicRegisterFragment dynamicFragment = new DynamicRegisterFragment();
-
-			dynamicFragment.setArguments(getIntent().getExtras());
-
-			getSupportFragmentManager().beginTransaction().add(
-					R.id.dynamic_register_fragment, dynamicFragment);
+		if (findViewById(R.id.flContainer) != null) {
+			dynamicFragment = new DynamicRegisterFragment();
+			addDynamicButtonThing();
 
 			CheckBox checkBox = (CheckBox) findViewById(R.id.cbToggleTimeSettings);
 			checkBox.setSelected(isTimeManuallySet);
@@ -45,9 +46,11 @@ public class RegisterParkingActivity extends FragmentActivity {
 						boolean isChecked) {
 					isTimeManuallySet = isChecked;
 					if(isChecked){
-						getSupportFragmentManager().beginTransaction().replace(R.id.dynamic_register_manually, dynamicFragment);
+						toast("checked");
+						getSupportFragmentManager().beginTransaction().remove(dynamicFragment).commit();
 					}else{
-						getSupportFragmentManager().beginTransaction().replace(R.id.dynamic_register_fragment, dynamicFragment);
+						toast("unchecked");
+						addDynamicButtonThing();
 					}
 				}
 			});
@@ -55,10 +58,25 @@ public class RegisterParkingActivity extends FragmentActivity {
 
 	}
 
+	private void addDynamicButtonThing() {
+		
+
+		dynamicFragment.setArguments(getIntent().getExtras());
+
+		getSupportFragmentManager().beginTransaction().add(
+				R.id.flContainer, dynamicFragment).commit();
+		
+	}
+
+	protected void toast(String string) {
+		Toast.makeText(this, string, Toast.LENGTH_SHORT).show();
+		
+	}
+
 	protected void setGUI() {
 
-		//initBasicFragment();
-		//initDynamicFragment();
+		initBasicFragment();
+		initDynamicFragment();
 
 	}
 
@@ -71,9 +89,12 @@ public class RegisterParkingActivity extends FragmentActivity {
 
 			getSupportFragmentManager().beginTransaction().add(
 					R.id.basic_register_fragment, basicFragment);
-
+			
+			
+			car = (Spinner)findViewById(R.id.sCarSpinner);
+			zone = (Spinner)findViewById(R.id.sZoneSpinner);
+			city = (Spinner)findViewById(R.id.sCity);
 		}
-
 	}
 
 	public void btnPickFromDate(View view) {
@@ -84,5 +105,7 @@ public class RegisterParkingActivity extends FragmentActivity {
 	public void setDate(int year, int month, int day) {
 		btnPickFromDate = (Button) findViewById(R.id.btnPickFromDate);
 		btnPickFromDate.setText(year + "/" + month + "/" + day);
+		
+		//GET DAY!!!!
 	}
 }

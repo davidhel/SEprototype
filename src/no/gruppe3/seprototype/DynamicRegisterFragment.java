@@ -15,6 +15,7 @@ import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.RelativeLayout;
 import android.widget.Spinner;
+import android.widget.Toast;
 import android.widget.ToggleButton;
 
 public class DynamicRegisterFragment extends Fragment{ 
@@ -74,9 +75,11 @@ public class DynamicRegisterFragment extends Fragment{
 			@Override
 			public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 				if(isChecked){
+					
 					createNotification();
 				}	
 				if(!isChecked){
+					toast("unchecked");
 					cancelNotification();
 				}
 			}
@@ -84,6 +87,11 @@ public class DynamicRegisterFragment extends Fragment{
 		
 	}
 	
+	protected void toast(String string) {
+		// TODO Auto-generated method stub
+		Toast.makeText(getActivity(), string, Toast.LENGTH_SHORT).show();
+	}
+
 	protected void cancelNotification() {
 		notimanager.cancel(NOTIFICATION_ID);
 	}
@@ -97,9 +105,9 @@ public class DynamicRegisterFragment extends Fragment{
 				.setContentText("Subject").setSmallIcon(R.drawable.ic_launcher)
 				.setContentIntent(pIntent)
 				.setOngoing(true)
-				.addAction(R.drawable.ic_launcher, "Pris", pIntent)
+				.addAction(R.drawable.ic_launcher, "Tid", pIntent)
 				.addAction(R.drawable.ic_launcher, "Sone", pIntent)
-				.addAction(R.drawable.ic_launcher, "Tid", pIntent);
+				.addAction(R.drawable.ic_launcher, "Pris", pIntent);
 		notimanager = (NotificationManager) getActivity().getSystemService(Context.NOTIFICATION_SERVICE);
 		
 	    notimanager.notify(NOTIFICATION_ID, noti.build());

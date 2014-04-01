@@ -47,7 +47,7 @@ public class MainActivity extends Activity {
 
 		if (checkUsername(username)) {
 			if (checkPassword(password)) {
-				Intent intent = new Intent(this, OrderActivity.class);
+				Intent intent = new Intent(this, RegisterParkingActivity.class);
 				startActivity(intent);
 			}
 		}

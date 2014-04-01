@@ -20,7 +20,8 @@
     <Spinner
         android:id="@+id/sCarSpinner"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+         />
 	
 	<TextView
         android:id="@+id/tvCity"
@@ -30,7 +31,7 @@
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
     <Spinner
-        android:id="@+id/etCity"
+        android:id="@+id/sCity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 	</LinearLayout>

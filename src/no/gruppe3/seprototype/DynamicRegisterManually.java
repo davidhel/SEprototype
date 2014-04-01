@@ -8,12 +8,12 @@ import android.view.ViewGroup;
 
 public class DynamicRegisterManually extends Fragment{
 
-	@Override
+	/*@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		return inflater.inflate(R.id.dynamic_register_manually, container, false);
 	}
 
-	
+	*/
 	
 }

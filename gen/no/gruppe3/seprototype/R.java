@@ -19,20 +19,17 @@ public final class R {
         public static final int start_parking_selector=0x7f020005;
     }
     public static final class id {
-        public static final int add=0x7f06001b;
-        public static final int basic_register_fragment=0x7f060023;
-        public static final int btnDatabaseTest=0x7f060019;
+        public static final int add=0x7f06001a;
+        public static final int basic_register_fragment=0x7f060022;
+        public static final int btnDatabaseTest=0x7f060018;
         public static final int btnNewUser=0x7f060017;
-        public static final int btnParking=0x7f060018;
-        public static final int btnPickFromDate=0x7f060026;
+        public static final int btnPickFromDate=0x7f060025;
         public static final int btnSubmit=0x7f060015;
         public static final int btnSubmitUser=0x7f06000f;
-        public static final int cbToggleTimeSettings=0x7f060027;
-        public static final int delete=0x7f06001c;
-        public static final int dynamic_register_fragment=0x7f060025;
-        public static final int dynamic_register_manually=0x7f060024;
-        public static final int etCity=0x7f060021;
-        public static final int etNavn=0x7f06001d;
+        public static final int cbToggleTimeSettings=0x7f060023;
+        public static final int delete=0x7f06001b;
+        public static final int dynamic_register_fragment=0x7f060026;
+        public static final int etNavn=0x7f06001c;
         public static final int etPassword=0x7f060014;
         public static final int etPhoneNumber=0x7f060012;
         public static final int etRegAddress=0x7f06000c;
@@ -42,16 +39,18 @@ public final class R {
         public static final int etRegPhone=0x7f060008;
         public static final int etRegPostalAddress=0x7f06000d;
         public static final int etRegPostalNumber=0x7f06000e;
-        public static final int group=0x7f06001a;
-        public static final int sCarSpinner=0x7f06001f;
-        public static final int sZoneSpinner=0x7f060029;
-        public static final int tvCar=0x7f06001e;
-        public static final int tvCity=0x7f060020;
+        public static final int flContainer=0x7f060024;
+        public static final int group=0x7f060019;
+        public static final int sCarSpinner=0x7f06001e;
+        public static final int sCity=0x7f060020;
+        public static final int sZoneSpinner=0x7f060028;
+        public static final int tvCar=0x7f06001d;
+        public static final int tvCity=0x7f06001f;
         public static final int tvNewUser=0x7f060016;
         public static final int tvPassword=0x7f060013;
-        public static final int tvZone=0x7f060028;
-        public static final int tvZoneInfoTitle=0x7f06002a;
-        public static final int tvZoneInformation=0x7f06002b;
+        public static final int tvZone=0x7f060027;
+        public static final int tvZoneInfoTitle=0x7f060029;
+        public static final int tvZoneInformation=0x7f06002a;
         public static final int txtPhone=0x7f060011;
         public static final int txtRegAddress=0x7f060005;
         public static final int txtRegFirstname=0x7f060004;
@@ -62,7 +61,7 @@ public final class R {
         public static final int txtRegPostalNumber=0x7f060007;
         public static final int txtRegister=0x7f060000;
         public static final int txtWelcome=0x7f060010;
-        public static final int zone_infor_fragment=0x7f060022;
+        public static final int zone_infor_fragment=0x7f060021;
     }
     public static final class layout {
         public static final int activitiy_register_user=0x7f030000;

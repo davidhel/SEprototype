@@ -80,22 +80,14 @@
             android:text="@string/btnNewUser" />
 
         <Button
-            android:id="@+id/btnParking"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentTop="true"
-            android:onClick="btnParking"
-            android:text="TESTParking" />
-
-        <Button
             android:id="@+id/btnDatabaseTest"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_above="@+id/txtPhone"
             android:layout_centerHorizontal="true"
             android:onClick="btnDatabase"
-            android:text="Button" />
+            android:background="#0000"
+            android:text="" />
 
     </RelativeLayout>
 
