@@ -20,7 +20,7 @@ import android.widget.Toast;
 public class RegisterParkingActivity extends FragmentActivity {
 
 	Button btnPickFromDate;
-	boolean isTimeManuallySet = false;
+	boolean isTimeManuallySet;
 	DynamicRegisterFragment dynamicFragment;
 	Spinner car,city,zone;
 	TextView zoneInfo;
@@ -41,7 +41,7 @@ public class RegisterParkingActivity extends FragmentActivity {
 		if (findViewById(R.id.flContainer) != null) {
 			dynamicFragment = new DynamicRegisterFragment();
 			addDynamicButtonThing();
-
+			isTimeManuallySet = true;
 			Calendar c = Calendar.getInstance();
 			int year = c.get(Calendar.YEAR);
 			int month = c.get(Calendar.MONTH);
@@ -49,7 +49,7 @@ public class RegisterParkingActivity extends FragmentActivity {
 			
 			btnPickFromDate = (Button)findViewById(R.id.btnPickFromDate);
 			btnPickFromDate.setAlpha(0);
-			btnPickFromDate.setEnabled(false);
+			btnPickFromDate.setEnabled(true);
 			btnPickFromDate.setText(year + "/" + month + "/" + day);
 			
 			CheckBox checkBox = (CheckBox) findViewById(R.id.cbToggleTimeSettings);

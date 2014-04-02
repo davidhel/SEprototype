@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
@@ -7,22 +7,27 @@
 	        android:id="@+id/tvZone"
 	        android:layout_width="match_parent"
 	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
 	        android:text="@string/zone_text"
 	        android:textAppearance="?android:attr/textAppearanceSmall"/>
 	
     <Spinner
         android:id="@+id/sZoneSpinner"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content" 
+        android:layout_below="@+id/tvZone"/>
 	    
     <TextView 
         android:id="@+id/tvZoneInfoTitle"
         android:text="@string/zone_price_per_hour_string"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"/>
     <TextView
         android:id="@+id/tvZoneInformation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
-</LinearLayout>
+</RelativeLayout>

@@ -38,8 +38,8 @@
         <item>003</item>
     </string-array>
 
-    <string name="pick_date">Pick date</string>
-    <string name="register_manually">Registrer manuelt:</string>
+    <string name="pick_date">Velg dato</string>
+    <string name="register_manually">Løpende parkering</string>
     <string name="log_in">Logg inn</string>
 
 </resources>
