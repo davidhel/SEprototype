@@ -79,7 +79,7 @@ public class DynamicRegisterFragment extends Fragment{
 					createNotification();
 				}	
 				if(!isChecked){
-					toast("unchecked");
+					//toast("unchecked");
 					cancelNotification();
 				}
 			}

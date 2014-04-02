@@ -83,6 +83,7 @@ public final class R {
         public static final int car_text=0x7f040005;
         public static final int city_text=0x7f040007;
         public static final int first_name=0x7f040010;
+        public static final int log_in=0x7f040017;
         public static final int mail=0x7f04000f;
         public static final int newUser=0x7f040003;
         public static final int password=0x7f04000d;
@@ -90,6 +91,7 @@ public final class R {
         public static final int postal_address=0x7f040013;
         public static final int postal_number=0x7f040014;
         public static final int reg_user=0x7f04000e;
+        public static final int register_manually=0x7f040016;
         public static final int start_parking_string=0x7f040009;
         public static final int stop_parking_string=0x7f04000a;
         public static final int submit=0x7f040002;

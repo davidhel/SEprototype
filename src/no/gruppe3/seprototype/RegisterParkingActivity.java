@@ -1,20 +1,21 @@
 package no.gruppe3.seprototype;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Calendar;
 
 import android.app.DialogFragment;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
-import android.text.format.Time;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
-import android.widget.Spinner;
-import android.widget.Toast;
 import android.widget.CompoundButton.OnCheckedChangeListener;
+import android.widget.Spinner;
+import android.widget.TextView;
+import android.widget.Toast;
 
 public class RegisterParkingActivity extends FragmentActivity {
 
@@ -22,6 +23,7 @@ public class RegisterParkingActivity extends FragmentActivity {
 	boolean isTimeManuallySet = false;
 	DynamicRegisterFragment dynamicFragment;
 	Spinner car,city,zone;
+	TextView zoneInfo;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceBundle) {
@@ -40,6 +42,16 @@ public class RegisterParkingActivity extends FragmentActivity {
 			dynamicFragment = new DynamicRegisterFragment();
 			addDynamicButtonThing();
 
+			Calendar c = Calendar.getInstance();
+			int year = c.get(Calendar.YEAR);
+			int month = c.get(Calendar.MONTH);
+			int day = c.get(Calendar.DAY_OF_MONTH);
+			
+			btnPickFromDate = (Button)findViewById(R.id.btnPickFromDate);
+			btnPickFromDate.setAlpha(0);
+			btnPickFromDate.setEnabled(false);
+			btnPickFromDate.setText(year + "/" + month + "/" + day);
+			
 			CheckBox checkBox = (CheckBox) findViewById(R.id.cbToggleTimeSettings);
 			checkBox.setSelected(isTimeManuallySet);
 			checkBox.setOnCheckedChangeListener(new OnCheckedChangeListener() {
@@ -49,11 +61,17 @@ public class RegisterParkingActivity extends FragmentActivity {
 						boolean isChecked) {
 					isTimeManuallySet = isChecked;
 					if(isChecked){
-						toast("checked");
+						//toast("checked");
+						btnPickFromDate.setAlpha(1);
+						btnPickFromDate.setEnabled(true);
 						getSupportFragmentManager().beginTransaction().remove(dynamicFragment).commit();
+						
 					}else{
-						toast("unchecked");
+						//toast("unchecked");
+						btnPickFromDate.setAlpha(0);
+						btnPickFromDate.setEnabled(false);
 						addDynamicButtonThing();
+						
 					}
 				}
 			});
@@ -116,10 +134,41 @@ public class RegisterParkingActivity extends FragmentActivity {
 
 	private void addItemsZoneSpinner() {
 		zone = (Spinner)findViewById(R.id.sZoneSpinner);
+		
+		zoneInfo = (TextView)findViewById(R.id.tvZoneInfoTitle);
+		zoneInfo.setText("hei");
+		
+		
+		
 		ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
 				R.array.spinner_zone, android.R.layout.simple_spinner_dropdown_item);
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
 		zone.setAdapter(adapter);
+		zone.setOnItemSelectedListener(new OnItemSelectedListener() {
+
+			@Override
+			public void onItemSelected(AdapterView<?> parentView, View selectedItemView,
+					int position, long ID) {
+				switch(position){
+				case 0:
+					zoneInfo.setText("20 kr");
+					break;
+				case 1:
+					zoneInfo.setText("22 kr");
+					break;
+				case 2:
+					zoneInfo.setText("25 kr");
+					break;
+				}
+				
+			}
+
+			@Override
+			public void onNothingSelected(AdapterView<?> arg0) {
+				// TODO Auto-generated method stub
+				
+			}
+		});
 	}
 
 	private void addItemsCarSpinner() {

@@ -58,7 +58,7 @@
             android:layout_below="@+id/etPassword"
             android:layout_marginTop="20dp"
             android:onClick="btnSubmit"
-            android:text="@string/submit" />
+            android:text="@string/log_in" />
 
         <TextView
             android:id="@+id/tvNewUser"
